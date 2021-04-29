@@ -12,7 +12,7 @@ def volume(x, y, z):
     return x * y * z
 
 def test_multiply():
-    assert volume(5, 5, 5) == 125\
+    assert volume(5, 5, 5) == 125
 
 def test_negative():
     with pytest.raises(ValueError):
