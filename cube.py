@@ -8,7 +8,7 @@ def volume(x, y, z):
 
     if x < 0 or y < 0 or z < 0:
         raise ValueError('Your input must be positive.')
-   
+
     return x * y * z
 
 def test_multiply():
@@ -21,15 +21,3 @@ def test_negative():
 def test_int():
     with pytest.raises(TypeError):
         volume("a","b","c")
-
-
-# def main():
-#     x = input("x: ")
-#     y = input("y: ")
-#     z = input("z: ")
-
-#     print("volume: ", volume(int(x), int(y), int(z)))
-
-
-# if __name__ == '__main__':
-#     main()
