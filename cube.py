@@ -1,6 +1,3 @@
-import pytest
-
-
 def volume(x, y, z):
 
     if isinstance(x, int) is False or isinstance(y, int) is False or isinstance(z, int) is False:
@@ -10,14 +7,3 @@ def volume(x, y, z):
         raise ValueError('Your input must be positive.')
 
     return x * y * z
-
-def test_multiply():
-    assert volume(5, 5, 5) == 125
-
-def test_negative():
-    with pytest.raises(ValueError):
-        volume(-1,-1,-1)
-
-def test_int():
-    with pytest.raises(TypeError):
-        volume("a","b","c")
